@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            LazyRow(modifier = Modifier.background(Grey100).padding(3.dp)) {
+            LazyRow() {
                 itemsIndexed(
                     listOf(
                         RowItemModel(R.drawable.image1, "Volodumur"),
